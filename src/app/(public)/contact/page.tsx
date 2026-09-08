@@ -119,12 +119,12 @@ export default function ContactPage() {
                 transition={{ delay: 0.2 + index * 0.1 }}
               >
                 <GlassCard className="p-6 text-center h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-500 dark:from-[#22D3EE] dark:to-[#60A5FA] mb-4 shadow-lg">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-600 to-secondary-500 dark:from-[#34D2A6] dark:to-[#5C97EA] mb-4 shadow-lg">
                     <info.icon className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="font-display font-light text-slate-900 dark:text-white mb-1">{info.title}</h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">{info.description}</p>
-                  <p className="text-cyan-600 dark:text-[#22D3EE] font-medium">{info.value}</p>
+                  <p className="text-accent-600 dark:text-[#34D2A6] font-medium">{info.value}</p>
                 </GlassCard>
               </motion.a>
             ))}
@@ -190,8 +190,8 @@ export default function ContactPage() {
                           {...register('subject')}
                           className="peer sr-only"
                         />
-                        <div className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-slate-200 bg-white dark:border-white/20 dark:bg-white/5 peer-checked:border-cyan-500 peer-checked:bg-cyan-50 dark:peer-checked:border-[#22D3EE] dark:peer-checked:bg-[#22D3EE]/10 hover:border-slate-300 dark:hover:border-white/30 transition-all">
-                          <dept.icon className="h-6 w-6 text-slate-400 dark:text-slate-500 peer-checked:text-cyan-600 dark:peer-checked:text-[#22D3EE]" />
+                        <div className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-slate-200 bg-white dark:border-white/20 dark:bg-white/5 peer-checked:border-accent-500 peer-checked:bg-accent-50 dark:peer-checked:border-[#34D2A6] dark:peer-checked:bg-[#34D2A6]/10 hover:border-slate-300 dark:hover:border-white/30 transition-all">
+                          <dept.icon className="h-6 w-6 text-slate-400 dark:text-slate-500 peer-checked:text-accent-600 dark:peer-checked:text-[#34D2A6]" />
                           <span className="text-sm font-medium text-slate-600 dark:text-slate-300">{dept.label}</span>
                         </div>
                       </label>
@@ -208,7 +208,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       {...register('name')}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none"
                       placeholder="John Doe"
                     />
                     {errors.name && (
@@ -222,7 +222,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       {...register('email')}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none"
                       placeholder="john@example.com"
                     />
                     {errors.email && (
@@ -239,7 +239,7 @@ export default function ContactPage() {
                   <input
                     type="tel"
                     {...register('phone')}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none"
                     placeholder="+91 98765 43210"
                   />
                 </div>
@@ -252,7 +252,7 @@ export default function ContactPage() {
                   <textarea
                     {...register('message')}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none resize-none"
                     placeholder="Tell us how we can help..."
                   />
                   {errors.message && (

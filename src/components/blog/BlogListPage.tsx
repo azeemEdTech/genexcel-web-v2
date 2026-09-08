@@ -102,7 +102,7 @@ export function BlogListPage({
                     )}
                   >
                     {/* Image */}
-                    <div className="aspect-video bg-gradient-to-br from-cyan-500/20 to-blue-500/20 relative overflow-hidden">
+                    <div className="aspect-video bg-gradient-to-br from-accent-500/20 to-blue-500/20 relative overflow-hidden">
                       {post.featuredImage ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -112,11 +112,11 @@ export function BlogListPage({
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center">
-                          <Tag className="w-12 h-12 text-cyan-500/30" />
+                          <Tag className="w-12 h-12 text-accent-500/30" />
                         </div>
                       )}
                       {post.category && (
-                        <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-slate-900/80 dark:backdrop-blur-md text-xs font-medium rounded-full text-cyan-700 dark:text-cyan-300">
+                        <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-slate-900/80 dark:backdrop-blur-md text-xs font-medium rounded-full text-accent-700 dark:text-accent-300">
                           {post.category.name}
                         </span>
                       )}
@@ -124,7 +124,7 @@ export function BlogListPage({
 
                     {/* Content */}
                     <div className="p-6">
-                      <h2 className="font-display font-light text-lg text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors line-clamp-2 mb-2">
+                      <h2 className="font-display font-light text-lg text-slate-900 dark:text-white group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors line-clamp-2 mb-2">
                         {post.title}
                       </h2>
                       {post.excerpt && (
@@ -148,7 +148,7 @@ export function BlogListPage({
                             </span>
                           )}
                         </div>
-                        <ArrowRight className="w-4 h-4 text-slate-300 dark:text-slate-500 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors" />
+                        <ArrowRight className="w-4 h-4 text-slate-300 dark:text-slate-500 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors" />
                       </div>
                     </div>
                   </Link>

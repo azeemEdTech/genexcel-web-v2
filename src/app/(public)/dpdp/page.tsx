@@ -35,7 +35,7 @@ export default function DPDPCompliancePage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary-500 to-accent-500 shadow-lg">
                   <Building className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -350,7 +350,7 @@ export default function DPDPCompliancePage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-accent-500 to-secondary-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -401,7 +401,7 @@ export default function DPDPCompliancePage() {
                   'We ensure that adequate safeguards (contractual obligations, encryption) are in place before transferring data',
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-cyan-500 mt-2" />
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-accent-500 mt-2" />
                     <p className="text-slate-600 dark:text-slate-300">{item}</p>
                   </div>
                 ))}
@@ -431,12 +431,12 @@ export default function DPDPCompliancePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Encryption', desc: 'AES-256 encryption for data at rest; TLS/HTTPS for data in transit', color: 'from-blue-500 to-cyan-500' },
+                { title: 'Encryption', desc: 'AES-256 encryption for data at rest; TLS/HTTPS for data in transit', color: 'from-secondary-500 to-accent-500' },
                 { title: 'Secure Authentication', desc: 'JWT tokens stored in device secure storage (iOS Keychain / Android EncryptedSharedPreferences)', color: 'from-green-500 to-emerald-500' },
                 { title: 'Minimal Local Storage', desc: 'Personal data kept in memory only during active sessions; no PII persisted in unencrypted local storage', color: 'from-violet-500 to-purple-500' },
                 { title: 'Access Controls', desc: 'Role-based access controls on all backend systems', color: 'from-amber-500 to-orange-500' },
                 { title: 'Token Management', desc: 'Push notification tokens deactivated on logout and deleted on account deletion', color: 'from-red-500 to-pink-500' },
-                { title: 'Regular Audits', desc: 'Periodic security assessments and vulnerability testing', color: 'from-teal-500 to-cyan-500' },
+                { title: 'Regular Audits', desc: 'Periodic security assessments and vulnerability testing', color: 'from-teal-500 to-accent-500' },
               ].map((item, index) => (
                 <motion.div
                   key={item.title}

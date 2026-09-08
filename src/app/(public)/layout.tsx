@@ -1,7 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ScrollProgress } from '@/components/animations/ScrollProgress';
-import { AquaField } from '@/components/effects/AquaField';
+import { BackgroundField } from '@/components/effects/BackgroundField';
 
 export default function PublicLayout({
   children,
@@ -11,7 +11,7 @@ export default function PublicLayout({
   return (
     <>
       <ScrollProgress />
-      <AquaField />
+      <BackgroundField />
       <Header />
       {children}
       <Footer />

@@ -78,7 +78,7 @@ const useCases = [
 
 const stats = [
   { value: 1020, suffix: '+', label: 'Genetic Traits Catalogued', color: 'text-slate-900 dark:text-white' },
-  { value: 117, suffix: '', label: 'Traits per Patient Report', color: 'text-cyan-600 dark:text-[#67E8F9]' },
+  { value: 117, suffix: '', label: 'Traits per Patient Report', color: 'text-accent-600 dark:text-[#6FE6C0]' },
   { value: 24, suffix: 'hr', label: 'Support', color: 'text-slate-900 dark:text-white' },
   { value: 100, suffix: '%', label: 'DPDP Compliant', color: 'text-amber-600 dark:text-[#FBBF24]' },
 ];
@@ -155,8 +155,8 @@ export default function HealthcarePage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <feature.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <feature.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="font-display font-light text-xl text-slate-900 dark:text-white mb-3">{feature.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
@@ -196,8 +196,8 @@ export default function HealthcarePage() {
               >
                 <GlassCard className="p-8 h-full" glow>
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <useCase.icon className="h-6 w-6 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <useCase.icon className="h-6 w-6 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                     </div>
                     <div>
                       <h3 className="font-display font-light text-lg text-slate-900 dark:text-white mb-2">{useCase.title}</h3>
@@ -239,8 +239,8 @@ export default function HealthcarePage() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm"
                   >
-                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-cyan-50 dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <Check className="h-5 w-5 text-cyan-600 dark:text-[#22D3EE]" />
+                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-accent-50 dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <Check className="h-5 w-5 text-accent-600 dark:text-[#34D2A6]" />
                     </div>
                     <span className="font-medium text-slate-700 dark:text-slate-200">{cert}</span>
                   </motion.div>
@@ -272,8 +272,8 @@ export default function HealthcarePage() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm"
                   >
-                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-cyan-50 dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <Check className="h-5 w-5 text-cyan-600 dark:text-[#22D3EE]" />
+                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-accent-50 dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <Check className="h-5 w-5 text-accent-600 dark:text-[#34D2A6]" />
                     </div>
                     <span className="font-medium text-slate-700 dark:text-slate-200">{integration}</span>
                   </motion.div>

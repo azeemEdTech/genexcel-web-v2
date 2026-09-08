@@ -35,7 +35,7 @@ export function BlogPostDetail({ post }: { post: Post }) {
           >
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-sm text-slate-500 dark:text-[#8B9AB5] hover:text-cyan-600 dark:hover:text-cyan-300 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-slate-500 dark:text-[#8B9AB5] hover:text-accent-600 dark:hover:text-accent-300 mb-6 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Blog
@@ -90,7 +90,7 @@ export function BlogPostDetail({ post }: { post: Post }) {
           <div
             className="prose prose-lg prose-slate dark:prose-invert max-w-none
               prose-headings:font-display prose-headings:font-light prose-headings:text-slate-900 dark:prose-headings:text-white
-              prose-a:text-cyan-600 dark:prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline
+              prose-a:text-accent-600 dark:prose-a:text-accent-400 prose-a:no-underline hover:prose-a:underline
               prose-img:rounded-xl prose-img:shadow-lg"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />

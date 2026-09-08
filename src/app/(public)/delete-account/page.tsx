@@ -175,12 +175,12 @@ export default function DeleteAccountPage() {
                   A confirmation will be sent to your registered email.
                 </p>
                 <GlassCard className="inline-flex items-center gap-2 px-6 py-3">
-                  <Mail className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE]" />
+                  <Mail className="h-4 w-4 text-accent-600 dark:text-[#34D2A6]" />
                   <span className="text-slate-600 dark:text-slate-300">
                     Questions? Contact{' '}
                     <a
                       href="mailto:it@curanova.ai"
-                      className="text-cyan-600 dark:text-[#22D3EE] font-medium hover:underline"
+                      className="text-accent-600 dark:text-[#34D2A6] font-medium hover:underline"
                     >
                       it@curanova.ai
                     </a>
@@ -203,7 +203,7 @@ export default function DeleteAccountPage() {
                   <input
                     type="email"
                     {...register('email')}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none"
                     placeholder="Enter the email you used to sign up"
                   />
                   {errors.email && (
@@ -218,7 +218,7 @@ export default function DeleteAccountPage() {
                   </label>
                   <select
                     {...register('reason')}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none appearance-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none appearance-none"
                   >
                     {reasonOptions.map((option) => (
                       <option key={option.value} value={option.value}>
@@ -236,7 +236,7 @@ export default function DeleteAccountPage() {
                   <textarea
                     {...register('message')}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 dark:focus:border-[#22D3EE] dark:focus:ring-0 transition-all outline-none resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder-slate-500 focus:border-accent-500 focus:ring-2 focus:ring-accent-100 dark:focus:border-[#34D2A6] dark:focus:ring-0 transition-all outline-none resize-none"
                     placeholder="Any additional feedback (optional)"
                   />
                 </div>

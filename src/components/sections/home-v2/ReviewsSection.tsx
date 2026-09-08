@@ -26,7 +26,7 @@ export function ReviewsSection() {
           transition={{ duration: 0.6 }}
           className="mb-11"
         >
-          <div className="text-[11.5px] font-semibold tracking-[0.24em] uppercase text-cyan-600 dark:text-[#22D3EE] mb-5">Families &amp; clinicians</div>
+          <div className="text-[11.5px] font-semibold tracking-[0.24em] uppercase text-accent-600 dark:text-[#34D2A6] mb-5">Families &amp; clinicians</div>
           <h2 className="font-display font-light text-slate-900 dark:text-white tracking-[-0.03em] leading-[1.14]" style={{ fontSize: 'clamp(28px,3.6vw,44px)' }}>
             What parents notice first.
           </h2>
@@ -41,10 +41,10 @@ export function ReviewsSection() {
         >
           {testimonials.map((t) => (
             <GlassCard key={t.author} className="p-8">
-              <Quote className="h-5 w-5 text-cyan-600 dark:text-[#22D3EE]" />
+              <Quote className="h-5 w-5 text-accent-600 dark:text-[#34D2A6]" />
               <p className="text-[15px] leading-[1.7] text-slate-900 dark:text-white my-4 mb-6">{t.quote}</p>
               <div className="flex items-center gap-3 pt-[18px] border-t border-slate-200 dark:border-white/[.14]">
-                <span className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full bg-gradient-to-br from-cyan-100 to-blue-100 border border-cyan-200 font-display text-sm font-semibold text-cyan-700 dark:from-[#22D3EE]/[.24] dark:to-[#60A5FA]/[.22] dark:border-[#22D3EE]/[.28] dark:text-[#A5F3FC]">
+                <span className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full bg-gradient-to-br from-accent-100 to-secondary-100 border border-accent-200 font-display text-sm font-semibold text-accent-700 dark:from-[#34D2A6]/[.24] dark:to-[#5C97EA]/[.22] dark:border-[#34D2A6]/[.28] dark:text-[#A5F3FC]">
                   {initialsOf(t.author)}
                 </span>
                 <span>

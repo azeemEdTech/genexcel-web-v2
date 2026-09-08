@@ -33,7 +33,7 @@ interface DashboardStats {
 }
 
 const statCards = [
-  { key: 'postCount', label: 'Total Posts', icon: FileText, color: 'from-blue-500 to-cyan-500' },
+  { key: 'postCount', label: 'Total Posts', icon: FileText, color: 'from-secondary-500 to-accent-500' },
   { key: 'totalViews', label: 'Total Views', icon: Eye, color: 'from-purple-500 to-pink-500' },
   { key: 'mediaCount', label: 'Media Files', icon: ImageIcon, color: 'from-green-500 to-emerald-500' },
   { key: 'categoryCount', label: 'Categories', icon: FolderOpen, color: 'from-orange-500 to-red-500' },

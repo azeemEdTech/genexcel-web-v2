@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
               className="mb-12"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary-500 to-accent-500 shadow-lg">
                   <Eye className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -381,12 +381,12 @@ export default function PrivacyPolicyPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Encryption in Transit', desc: 'All data transmitted between the App and our servers uses HTTPS/TLS encryption', color: 'from-blue-500 to-cyan-500' },
+                { title: 'Encryption in Transit', desc: 'All data transmitted between the App and our servers uses HTTPS/TLS encryption', color: 'from-secondary-500 to-accent-500' },
                 { title: 'Encryption at Rest', desc: 'Personal and health data is encrypted using industry-standard AES-256 encryption on our servers', color: 'from-green-500 to-emerald-500' },
                 { title: 'Secure Token Storage', desc: "Authentication tokens (JWT) are stored using the device's secure keychain (iOS) or encrypted shared preferences (Android) via Expo SecureStore", color: 'from-violet-500 to-purple-500' },
                 { title: 'No PII in Local Storage', desc: 'Personal Identifiable Information is held in memory only during active sessions and is not persisted to unencrypted local storage', color: 'from-amber-500 to-orange-500' },
                 { title: 'Access Controls', desc: 'Strict role-based access controls on our backend systems', color: 'from-red-500 to-pink-500' },
-                { title: 'Regular Security Audits', desc: 'We conduct periodic security assessments of our infrastructure', color: 'from-teal-500 to-cyan-500' },
+                { title: 'Regular Security Audits', desc: 'We conduct periodic security assessments of our infrastructure', color: 'from-teal-500 to-accent-500' },
               ].map((item, index) => (
                 <motion.div
                   key={item.title}
@@ -618,7 +618,7 @@ export default function PrivacyPolicyPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-accent-500 to-secondary-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">

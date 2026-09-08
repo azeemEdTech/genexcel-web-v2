@@ -11,17 +11,17 @@ function AppleGlyph() {
 
 function PlayGlyph() {
   return (
-    <svg viewBox="0 0 512 512" className="h-[22px] w-[22px]" aria-hidden="true">
-      <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z" fill="#00d4ff" />
-      <path d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0z" fill="#00f076" />
-      <path d="M425.2 185.4l-60.1 34.6-65.4-65.4 65.4-65.4 60.1 34.6c17.7 10.2 17.7 35.4 0 45.6z" fill="#ffbc00" />
-      <path d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#ff3a44" />
+    <svg viewBox="0 0 100 100" className="h-[22px] w-[22px]" aria-hidden="true">
+      <path d="M48,38 L20,10 L20,90 Z" fill="#00A0FF" />
+      <path d="M48,38 L20,10 L73,41.2 Z" fill="#FF3D00" />
+      <path d="M48,38 L73,41.2 L88,50 L73,58.8 Z" fill="#FFD500" />
+      <path d="M48,38 L73,58.8 L20,90 Z" fill="#00E676" />
     </svg>
   );
 }
 
 const badgeBase =
-  'inline-flex items-center gap-2.5 h-[52px] px-5 rounded-2xl border transition-colors bg-white border-slate-300 text-slate-900 hover:border-slate-400 shadow-sm dark:bg-[#0A1428] dark:border-white/15 dark:text-white dark:hover:border-white/30 dark:shadow-none';
+  'inline-flex items-center justify-center gap-2.5 h-[52px] px-5 rounded-2xl border transition-colors bg-white border-slate-300 text-primary-950 hover:border-slate-400 shadow-sm dark:bg-primary-900 dark:border-white/15 dark:text-white dark:hover:border-white/30 dark:shadow-none';
 
 export function AppStoreBadges({ className }: { className?: string }) {
   const { appStoreUrl, playStoreUrl } = siteConfig;

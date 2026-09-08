@@ -15,16 +15,15 @@ export const siteConfig = {
 
 export const navItems = [
   {
-    title: 'Platform',
+    title: 'Product',
     href: '/platform',
     children: [
       { title: 'Platform Overview', href: '/platform', description: 'Genetics, Helix and every system in one place' },
-      { title: 'How It Works', href: '/how-it-works', description: 'From saliva sample to a tutor that teaches differently' },
       { title: 'The Science', href: '/science', description: 'How the genetic report is built and read' },
     ],
   },
   {
-    title: 'Solutions',
+    title: "Who it's for",
     href: '/solutions',
     children: [
       { title: 'For Families', href: '/solutions/families', description: 'One household account for every child' },
@@ -32,29 +31,49 @@ export const navItems = [
       { title: 'For Healthcare', href: '/solutions/healthcare', description: 'Genetic counsellors, labs and telehealth partners' },
     ],
   },
+  { title: 'How It Works', href: '/how-it-works' },
+  { title: 'Trust & Privacy', href: '/trust' },
   { title: 'Pricing', href: '/pricing' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'About', href: '/about' },
-  { title: 'Contact', href: '/contact' },
+  {
+    title: 'Company',
+    href: '/about',
+    children: [
+      { title: 'About Us', href: '/about', description: 'Who we are and what we’re building' },
+      { title: 'Careers', href: '/careers', description: 'Join the team behind GenExcel' },
+      { title: 'Press', href: '/press', description: 'News, updates and media resources' },
+      { title: 'Contact', href: '/contact', description: 'Talk to our team' },
+    ],
+  },
+  {
+    title: 'Resources',
+    href: '/blog',
+    children: [
+      { title: 'Blog', href: '/blog', description: 'Articles on genetics, learning and wellness' },
+      { title: 'FAQs', href: '/faqs', description: 'Answers to common questions' },
+      { title: 'Help Center', href: '/help', description: 'Get support with GenExcel' },
+    ],
+  },
 ];
 
 export const footerLinks = {
-  solutions: [
+  product: [
+    { title: 'Platform Overview', href: '/platform' },
+    { title: 'The Science', href: '/science' },
+    { title: 'How It Works', href: '/how-it-works' },
+    { title: 'Pricing', href: '/pricing' },
+  ],
+  whoItsFor: [
     { title: 'For Families', href: '/solutions/families' },
     { title: 'For Schools', href: '/solutions/schools' },
     { title: 'For Healthcare', href: '/solutions/healthcare' },
-    { title: 'Pricing', href: '/pricing' },
   ],
   company: [
     { title: 'About Us', href: '/about' },
     { title: 'Careers', href: '/careers' },
     { title: 'Press', href: '/press' },
     { title: 'Contact', href: '/contact' },
-    { title: 'Support', href: '/help' },
   ],
   resources: [
-    { title: 'How It Works', href: '/how-it-works' },
-    { title: 'Platform Overview', href: '/platform' },
     { title: 'Blog', href: '/blog' },
     { title: 'FAQs', href: '/faqs' },
     { title: 'Help Center', href: '/help' },
@@ -152,55 +171,37 @@ export const testimonials = [
 
 export const pricingPlans = [
   {
-    name: 'Free',
-    price: '0',
-    period: 'forever',
-    description: 'The AI tutor and lifestyle tools, on us',
+    name: 'Basic',
+    description: 'The full app experience, without a genetic report',
     features: [
+      'Account, household and child profiles',
       'Helix AI tutor, chat and voice',
-      'Textbook-grounded homework help',
-      'Study plans, lesson learner and roadmaps',
-      'Diet plans, NutriScan and water tracking',
-      'Fitness plans and gym logging',
-      'Lifestyle tracking (My Traits unlocks on PRO)',
-      '1 child profile',
+      'Textbook-grounded schoolwork help',
+      'Learning hub, lesson learner, study plans and roadmaps',
+      'Academic results, report-card scanning and mastery mapping',
+      'Psychometric learning profile',
+      'Diet plans, food scanning, water and weight tracking',
+      'Fitness plans, gym logging, habits and achievements',
+      'Step tracking, wearables and health metrics',
+      'Games, rewards and journey',
+      'Lifestyle section (in place of My Traits)',
     ],
-    cta: 'Get Started Free',
+    cta: 'Talk to Us',
     href: '/contact',
     popular: false,
   },
   {
-    name: 'Premium',
-    price: '2,999',
-    period: 'per year',
-    description: "Everything in Free, plus your child's genetic report",
+    name: 'Pro',
+    description: 'Everything in Basic, plus your child’s genetic report',
     features: [
-      'Everything in Free',
-      'Genetic test kit included',
-      'Full My Traits report: diet, learning, fitness, personality and health',
+      'Everything in Basic',
+      'Genetic report assignment',
+      'My Traits section: diet, learning, fitness, personality and health',
+      'Genetic personalisation of the tutor',
       'Genetic adjustments in nutrition and fitness plans',
-      'Genetic counsellor consultations',
-      'Priority email support',
     ],
-    cta: 'Order Genetic Test',
+    cta: 'Talk to Us',
     href: '/contact',
     popular: true,
-  },
-  {
-    name: 'Family',
-    price: '7,999',
-    period: 'per year',
-    description: 'For families with multiple children',
-    features: [
-      'Everything in Premium',
-      'Up to 4 children on genetic reports',
-      'Family health comparisons',
-      'Combined genetic insights',
-      'Priority consultation booking',
-      'Dedicated family support',
-    ],
-    cta: 'Get Family Plan',
-    href: '/contact',
-    popular: false,
   },
 ];

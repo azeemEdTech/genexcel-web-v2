@@ -54,11 +54,11 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <Link key={solution.title} href={solution.href} className="block group">
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6 group-hover:scale-110 transition-transform">
-                    <solution.icon className="h-8 w-8 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6 group-hover:scale-110 transition-transform">
+                    <solution.icon className="h-8 w-8 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
 
-                  <h2 className="font-display font-light text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-cyan-600 dark:group-hover:text-[#22D3EE] transition-colors">
+                  <h2 className="font-display font-light text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-[#34D2A6] transition-colors">
                     {solution.title}
                   </h2>
 
@@ -77,7 +77,7 @@ export default function SolutionsPage() {
                     ))}
                   </div>
 
-                  <div className="flex items-center text-cyan-600 dark:text-[#22D3EE] font-semibold group-hover:gap-3 gap-2 transition-all">
+                  <div className="flex items-center text-accent-600 dark:text-[#34D2A6] font-semibold group-hover:gap-3 gap-2 transition-all">
                     Learn More
                     <ArrowRight className="h-4 w-4" />
                   </div>

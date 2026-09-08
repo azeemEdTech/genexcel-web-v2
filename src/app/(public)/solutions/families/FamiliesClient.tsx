@@ -64,7 +64,7 @@ const benefits = [
 
 const stats = [
   { value: 1020, suffix: '+', label: 'Genetic Traits Catalogued', color: 'text-slate-900 dark:text-white' },
-  { value: 225000, suffix: '+', label: 'Textbook Passages', color: 'text-cyan-600 dark:text-[#67E8F9]' },
+  { value: 225000, suffix: '+', label: 'Textbook Passages', color: 'text-accent-600 dark:text-[#6FE6C0]' },
   { value: 8, suffix: '', label: 'Playable Cognitive Games', color: 'text-slate-900 dark:text-white' },
   { value: 26, suffix: '', label: 'Trait Profiles', color: 'text-amber-600 dark:text-[#FBBF24]' },
 ];
@@ -145,8 +145,8 @@ export default function FamiliesPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <feature.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <feature.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="font-display font-light text-xl text-slate-900 dark:text-white mb-3">{feature.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
@@ -188,8 +188,8 @@ export default function FamiliesPage() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-3"
                   >
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-50 dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE]" />
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-50 dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <Check className="h-4 w-4 text-accent-600 dark:text-[#34D2A6]" />
                     </div>
                     <span className="text-slate-700 dark:text-slate-300">{benefit}</span>
                   </motion.div>

@@ -73,7 +73,7 @@ const benefits = [
 
 const stats = [
   { value: 50, suffix: '+', label: 'Partner Schools', color: 'text-slate-900 dark:text-white' },
-  { value: 15000, suffix: '+', label: 'Students', color: 'text-cyan-600 dark:text-[#67E8F9]' },
+  { value: 15000, suffix: '+', label: 'Students', color: 'text-accent-600 dark:text-[#6FE6C0]' },
   { value: 9, suffix: '', label: 'Learning Indicators per Student', color: 'text-slate-900 dark:text-white' },
   { value: 15, suffix: '', label: 'Teaching Methods Supported', color: 'text-amber-600 dark:text-[#FBBF24]' },
 ];
@@ -173,8 +173,8 @@ export default function SchoolsPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <feature.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <feature.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="font-display font-light text-xl text-slate-900 dark:text-white mb-3">{feature.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
@@ -214,8 +214,8 @@ export default function SchoolsPage() {
               >
                 <GlassCard className="p-8 h-full" glow>
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-50 dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <Check className="h-6 w-6 text-cyan-600 dark:text-[#22D3EE]" />
+                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-accent-50 dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <Check className="h-6 w-6 text-accent-600 dark:text-[#34D2A6]" />
                     </div>
                     <div>
                       <h3 className="font-display font-light text-lg text-slate-900 dark:text-white mb-2">{benefit.title}</h3>
@@ -273,7 +273,7 @@ export default function SchoolsPage() {
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
-                        <Check className={`h-5 w-5 ${pkg.highlighted ? 'text-white' : 'text-cyan-600 dark:text-[#22D3EE]'}`} />
+                        <Check className={`h-5 w-5 ${pkg.highlighted ? 'text-white' : 'text-accent-600 dark:text-[#34D2A6]'}`} />
                         <span className={pkg.highlighted ? 'text-white/90' : 'text-slate-600 dark:text-slate-300'}>{feature}</span>
                       </li>
                     ))}

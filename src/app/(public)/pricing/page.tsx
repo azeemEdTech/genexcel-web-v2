@@ -3,7 +3,7 @@ import PricingPage from './PricingClient';
 
 export const metadata: Metadata = {
   title: 'Pricing',
-  description: 'Start free with Helix and the lifestyle tools, or unlock the full genetic report, My Traits and genetic personalisation with Premium or Family.',
+  description: 'Start on Basic with Helix and the lifestyle tools, or unlock the full genetic report, My Traits and genetic personalisation with Pro.',
 };
 
 export default function Page() {

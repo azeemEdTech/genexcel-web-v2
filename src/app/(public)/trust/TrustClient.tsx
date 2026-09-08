@@ -74,8 +74,8 @@ export default function TrustPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <pillar.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <pillar.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="text-xl font-display font-medium text-slate-900 dark:text-white mb-3">{pillar.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300">{pillar.description}</p>
@@ -107,8 +107,8 @@ export default function TrustPage() {
                   'A fabricated quiz score, even if they ask for one',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-lg border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
-                      <MessageCircleOff className="h-4 w-4 text-cyan-600 dark:text-[#67E8F9]" />
+                    <div className="flex-shrink-0 w-8 h-8 rounded-lg border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] flex items-center justify-center">
+                      <MessageCircleOff className="h-4 w-4 text-accent-600 dark:text-[#6FE6C0]" />
                     </div>
                     <span className="text-sm font-medium text-slate-700 dark:text-slate-200">{item}</span>
                   </div>
@@ -119,7 +119,7 @@ export default function TrustPage() {
             <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <GlassCard className="p-8" glow>
                 <div className="flex items-center gap-3 mb-6">
-                  <Info className="h-6 w-6 text-cyan-600 dark:text-[#22D3EE]" />
+                  <Info className="h-6 w-6 text-accent-600 dark:text-[#34D2A6]" />
                   <h3 className="text-xl font-display font-medium text-slate-900 dark:text-white">What we&apos;re still finishing</h3>
                 </div>
                 <p className="text-slate-600 dark:text-slate-300 mb-4">

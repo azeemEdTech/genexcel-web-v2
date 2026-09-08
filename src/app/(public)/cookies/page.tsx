@@ -56,7 +56,7 @@ export default function CookiePolicyPage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary-500 to-accent-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -178,7 +178,7 @@ export default function CookiePolicyPage() {
                   title: 'AsyncStorage',
                   purpose: 'App preferences and state',
                   data: 'Non-PII settings: biometric preference, cached role flags, legal consent status, notification preferences',
-                  color: 'from-blue-500 to-cyan-500',
+                  color: 'from-secondary-500 to-accent-500',
                 },
                 {
                   icon: Shield,

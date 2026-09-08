@@ -26,7 +26,7 @@ export function ComingSoonSection({
             transition={{ duration: 0.6 }}
           >
             <GlassCard className="p-8 md:p-12 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-secondary-500 to-accent-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon className="w-8 h-8 text-white" />
               </div>
               <h2 className="font-display font-light text-2xl md:text-3xl text-slate-900 dark:text-white mb-4">

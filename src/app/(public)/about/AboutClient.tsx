@@ -99,8 +99,8 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <value.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <value.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="text-xl font-display font-medium text-slate-900 dark:text-white mb-3">{value.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300">{value.description}</p>

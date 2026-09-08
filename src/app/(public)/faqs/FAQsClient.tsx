@@ -39,9 +39,9 @@ const faqs = [
       "Not yet. Today's reports focus on diet, learning, fitness, personality, and general health-related traits reviewed by our team; polygenic risk scores and medication-response (pharmacogenomic) insights are not currently generated. Any health-related trait we do report is meant to inform conversations with your paediatrician or our genetic counsellors, not to replace medical diagnosis.",
   },
   {
-    question: "What's the difference between the free tier and having a genetic report?",
+    question: "What's the difference between Basic and having a genetic report?",
     answer:
-      'Helix, homework help, study plans, and our diet and fitness tools all work on the Free plan — your child just sees a general "Lifestyle" section instead of "My Traits," since Helix is never instructed to mention genes or DNA on Free. Adding a genetic report through Premium or Family unlocks My Traits and genetically personalized nutrition and fitness guidance.',
+      'Helix, homework help, study plans, and our diet and fitness tools all work on the Basic plan — your child just sees a general "Lifestyle" section instead of "My Traits," since Helix is never instructed to mention genes or DNA on Basic. Adding a genetic report through Pro unlocks My Traits and genetically personalized nutrition and fitness guidance.',
   },
   {
     question: "Is any of my family's data processed outside India?",
@@ -70,7 +70,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
           className={cn(
             'p-6 rounded-2xl border-2 transition-all duration-300',
             isOpen
-              ? 'bg-cyan-50 dark:bg-[#22D3EE]/[.09] border-cyan-200 dark:border-[#22D3EE]/[.24]'
+              ? 'bg-accent-50 dark:bg-[#34D2A6]/[.09] border-accent-200 dark:border-[#34D2A6]/[.24]'
               : 'bg-white dark:bg-slate-800 border-slate-100 dark:border-slate-700 hover:border-slate-200 dark:hover:border-slate-600'
           )}
         >
@@ -126,7 +126,7 @@ export default function FAQsPage() {
               <p className="text-slate-600 dark:text-slate-300 mb-2">Still have questions?</p>
               <a
                 href="/contact"
-                className="text-cyan-600 dark:text-[#22D3EE] font-semibold hover:text-cyan-700 dark:hover:text-[#67E8F9] transition-colors"
+                className="text-accent-600 dark:text-[#34D2A6] font-semibold hover:text-accent-700 dark:hover:text-[#6FE6C0] transition-colors"
               >
                 Contact our team →
               </a>

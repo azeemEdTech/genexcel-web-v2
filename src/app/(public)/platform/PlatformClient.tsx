@@ -24,7 +24,7 @@ import {
 
 const platformStats = [
   { value: 1020, suffix: '+', label: 'Genetic Traits Catalogued', color: 'text-slate-900 dark:text-white' },
-  { value: 225000, suffix: '+', label: 'Textbook Passages for Helix', color: 'text-cyan-600 dark:text-[#67E8F9]' },
+  { value: 225000, suffix: '+', label: 'Textbook Passages for Helix', color: 'text-accent-600 dark:text-[#6FE6C0]' },
   { value: 26, suffix: '', label: 'Genetic Trait Profiles', color: 'text-slate-900 dark:text-white' },
   { value: 8, suffix: '', label: 'Playable Cognitive Games', color: 'text-amber-600 dark:text-[#FBBF24]' },
 ];
@@ -158,8 +158,8 @@ export default function PlatformPage() {
             >
               <GlassCard className="p-8 md:p-10" glow>
                 <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 lg:gap-10 items-start">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09]">
-                    <system.icon className="h-8 w-8 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09]">
+                    <system.icon className="h-8 w-8 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <div>
                     <h2 className="font-display font-light text-2xl md:text-3xl text-slate-900 dark:text-white mb-3">{system.title}</h2>
@@ -167,7 +167,7 @@ export default function PlatformPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {system.points.map((point) => (
                         <div key={point} className="flex items-start gap-2.5 text-sm text-slate-600 dark:text-slate-300">
-                          <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE] flex-none mt-0.5" />
+                          <Check className="h-4 w-4 text-accent-600 dark:text-[#34D2A6] flex-none mt-0.5" />
                           {point}
                         </div>
                       ))}
@@ -198,7 +198,7 @@ export default function PlatformPage() {
               <div className="grid grid-cols-2 gap-2 mb-6">
                 {games.map((game) => (
                   <div key={game} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-                    <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE] flex-none" />
+                    <Check className="h-4 w-4 text-accent-600 dark:text-[#34D2A6] flex-none" />
                     {game}
                   </div>
                 ))}
@@ -209,7 +209,7 @@ export default function PlatformPage() {
             <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <GlassCard className="p-8" glow>
                 <div className="flex items-center gap-3 mb-6">
-                  <Clock className="h-6 w-6 text-cyan-600 dark:text-[#22D3EE]" />
+                  <Clock className="h-6 w-6 text-accent-600 dark:text-[#34D2A6]" />
                   <h3 className="font-display font-light text-xl text-slate-900 dark:text-white">Coming Soon</h3>
                 </div>
                 <p className="text-slate-600 dark:text-slate-300 mb-6">

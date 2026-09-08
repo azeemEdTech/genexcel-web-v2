@@ -19,12 +19,12 @@ const faqs = [
     answer: "From the time our lab receives your sample, results are typically available within 2-3 weeks. You'll receive an email notification when your report is ready. Results are accessible through our mobile app and web portal.",
   },
   {
-    question: 'Can I upgrade from Free to Premium later?',
-    answer: "Absolutely! You can upgrade at any time from within the app. Your existing data will be preserved, and you'll gain immediate access to premium features. The genetic test kit will be shipped within 3-5 business days after upgrade.",
+    question: 'Can I upgrade from Basic to Pro later?',
+    answer: "Yes. You can request the upgrade at any time from within the app. Your existing data is preserved throughout, and a request is reviewed and approved by our team before it unlocks on your device — no reinstall or restart needed.",
   },
   {
-    question: "What's the difference between Free/Premium and having a genetic report?",
-    answer: "Helix (our AI tutor), homework help, study plans, and diet and fitness tools all work on the Free plan — your child just sees a general \"Lifestyle\" section instead of \"My Traits,\" and Helix is never instructed to mention genes, DNA, or traits. Upgrading to Premium or Family adds the genetic report itself: My Traits unlocks, and nutrition and fitness plans become genetically personalized. Upgrades are approved by our team and unlock on your device immediately, with no restart needed.",
+    question: "What's the difference between Basic and having a genetic report?",
+    answer: "Helix (our AI tutor), homework help, study plans, and diet and fitness tools all work on the Basic plan — your child just sees a general \"Lifestyle\" section instead of \"My Traits,\" and Helix is never instructed to mention genes, DNA, or traits. Upgrading to Pro adds the genetic report itself: My Traits unlocks, and nutrition and fitness plans become genetically personalized.",
   },
   {
     question: 'Is my genetic data safe?',
@@ -36,15 +36,11 @@ const faqs = [
   },
   {
     question: 'Can I add more children to my account?',
-    answer: "The Free plan supports 1 child, Premium supports 1 child, and the Family plan supports up to 4 children. For larger families or organizations, please contact our sales team for custom pricing.",
+    answer: "One household account supports multiple children. For larger families, schools or organizations, please contact our team to talk through what you need.",
   },
   {
-    question: 'Is there a refund policy?',
-    answer: "Yes, we offer a 30-day money-back guarantee for genetic test purchases. If you're not satisfied with your results, contact us within 30 days for a full refund. App subscription refunds are handled through your respective app store.",
-  },
-  {
-    question: 'Do you offer school or enterprise pricing?',
-    answer: "Yes! We have special pricing for schools, hospitals, and enterprises. Contact our sales team for a customized quote based on your organization's needs.",
+    question: 'Do you offer school or enterprise plans?',
+    answer: "Yes — schools, hospitals and other organizations work with us through a dedicated onboarding process rather than the individual Basic/Pro plans above. Contact our team for details.",
   },
 ];
 
@@ -97,8 +93,8 @@ export default function PricingPage() {
       <PageHero
         icon={Sparkles}
         eyebrow="Simple Pricing"
-        title={<>Choose the Perfect <GradientText>Plan for Your Family</GradientText></>}
-        subtitle="Start free, upgrade when you're ready. All plans include our mobile app with core features."
+        title={<>Choose the Right <GradientText>Plan for Your Family</GradientText></>}
+        subtitle="Start on Basic, upgrade to Pro when you're ready. Both plans share the same app — Pro adds the genetic report."
       />
 
       {/* Pricing Section */}

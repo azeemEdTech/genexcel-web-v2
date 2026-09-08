@@ -101,8 +101,8 @@ export default function HowItWorksPage() {
               >
                 <GlassCard className="p-8 h-full" glow>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09]">
-                      <step.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09]">
+                      <step.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                     </div>
                     <span className="text-sm font-display font-medium text-amber-600 dark:text-[#FBBF24]">0{index + 1}</span>
                   </div>
@@ -146,8 +146,8 @@ export default function HowItWorksPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <GlassCard className="p-8 h-full" glow>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-cyan-200 bg-cyan-50 dark:border-[#22D3EE]/[.24] dark:bg-[#22D3EE]/[.09] mb-6">
-                    <view.icon className="h-7 w-7 text-cyan-600 dark:text-[#67E8F9]" strokeWidth={1.6} />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border border-accent-200 bg-accent-50 dark:border-[#34D2A6]/[.24] dark:bg-[#34D2A6]/[.09] mb-6">
+                    <view.icon className="h-7 w-7 text-accent-600 dark:text-[#6FE6C0]" strokeWidth={1.6} />
                   </div>
                   <h3 className="text-lg font-display font-medium text-slate-900 dark:text-white mb-3">{view.role}</h3>
                   <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{view.sees}</p>
@@ -189,7 +189,7 @@ export default function HowItWorksPage() {
               <ul className="space-y-2">
                 {['Helix, textbook-grounded homework help', 'Study plans, roadmaps and a lesson generator', 'A curated learning profile for teachers'].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-                    <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE] flex-none" />
+                    <Check className="h-4 w-4 text-accent-600 dark:text-[#34D2A6] flex-none" />
                     {item}
                   </li>
                 ))}
@@ -205,7 +205,7 @@ export default function HowItWorksPage() {
               <ul className="space-y-2">
                 {['Activity rings and wearable integration', 'Diet plans with genetic adjustments', 'Gym plans and live workout logging'].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-                    <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE] flex-none" />
+                    <Check className="h-4 w-4 text-accent-600 dark:text-[#34D2A6] flex-none" />
                     {item}
                   </li>
                 ))}

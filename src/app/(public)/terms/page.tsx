@@ -60,7 +60,7 @@ export default function TermsOfServicePage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary-500 to-accent-500 shadow-lg">
                   <BookOpen className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -266,7 +266,7 @@ export default function TermsOfServicePage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-accent-500 shadow-lg">
                   <Video className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -495,7 +495,7 @@ export default function TermsOfServicePage() {
           <div className="max-w-4xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-accent-500 to-secondary-500 shadow-lg">
                   <Server className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
@@ -519,7 +519,7 @@ export default function TermsOfServicePage() {
                   transition={{ delay: index * 0.05 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-cyan-500 mt-2" />
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-accent-500 mt-2" />
                   <p className="text-slate-600 dark:text-slate-300">{item}</p>
                 </motion.div>
               ))}
