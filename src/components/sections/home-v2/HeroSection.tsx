@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, Droplets } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
 
 export function HeroSection() {
   return (
@@ -37,18 +38,15 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-3.5 mb-10">
-          <Link
-            href="#platform"
-            className="inline-flex items-center gap-2.5 h-14 px-7 rounded-full text-[15.5px] font-semibold whitespace-nowrap text-white bg-gradient-to-br from-primary-600 to-secondary-500 shadow-md hover:opacity-90 dark:text-[#F2FEFF] dark:bg-gradient-to-br dark:from-white/[.32] dark:via-[#22D3EE]/[.24] dark:to-[#60A5FA]/20 dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border dark:border-white/[.36] dark:shadow-[0_10px_26px_rgba(4,14,30,.35)] dark:hover:border-white/50 dark:hover:opacity-100 transition-colors"
-          >
-            Meet Helix, the AI tutor
-            <ArrowRight className="h-[17px] w-[17px]" />
+          <Link href="#platform">
+            <Button variant="primary" size="lg" rightIcon={<ArrowRight className="h-[17px] w-[17px]" />}>
+              Meet Helix, the AI tutor
+            </Button>
           </Link>
-          <Link
-            href="/science"
-            className="inline-flex items-center h-14 px-7 rounded-full text-[15.5px] font-semibold whitespace-nowrap text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 dark:text-[#E9F4FF] dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.13] dark:to-white/[.05] dark:backdrop-blur-xl dark:backdrop-saturate-150 dark:border-white/20 dark:hover:border-white/[.38] dark:hover:from-white/20 dark:hover:to-[#22D3EE]/[.14] transition-colors"
-          >
-            Explore the traits
+          <Link href="/science">
+            <Button variant="secondary" size="lg">
+              Explore the traits
+            </Button>
           </Link>
         </div>
 

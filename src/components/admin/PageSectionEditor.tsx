@@ -63,7 +63,7 @@ const sectionFields: Record<string, { label: string; description: string; fields
       { key: 'author', label: 'Author Name', type: 'text', placeholder: 'Priya M.' },
       { key: 'role', label: 'Role / Title', type: 'text', placeholder: 'Parent of 9-year-old' },
       { key: 'location', label: 'Location', type: 'text', placeholder: 'Mumbai' },
-      { key: 'avatar', label: 'Avatar Image URL', type: 'text', placeholder: '/images/testimonials/avatar-1.jpg' },
+      { key: 'avatar', label: 'Avatar Image URL', type: 'text', placeholder: 'https://example.com/avatar.jpg' },
     ],
   },
   pricing: {

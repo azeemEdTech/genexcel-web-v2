@@ -34,9 +34,9 @@ gha-key.json
 .claude/
 
 # Stray image files in root
-*.png
-*.jpg
-*.jpeg
+/*.png
+/*.jpg
+/*.jpeg
 
 # Allow favicon and icon files
 !public/favicon*.png

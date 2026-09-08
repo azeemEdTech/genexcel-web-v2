@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { toast } from 'sonner';
 import slugify from 'slugify';
-import { Loader2, Save, ArrowLeft, ImageIcon, X, FolderOpen, Upload, Link2 } from 'lucide-react';
+import { Loader2, Save, ArrowLeft, X, FolderOpen, Upload, Link2 } from 'lucide-react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { MediaPickerModal } from './MediaPickerModal';

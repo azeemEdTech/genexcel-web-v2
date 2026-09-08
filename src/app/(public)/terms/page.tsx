@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
                   <BookOpen className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   1. <span className="gradient-text">Definitions</span>
                 </h2>
               </div>
@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg">
                   <UserCheck className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   2. <span className="gradient-text">Eligibility</span>
                 </h2>
               </div>
@@ -147,7 +147,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 shadow-lg">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   3. Account Registration and <span className="gradient-text">Security</span>
                 </h2>
               </div>
@@ -188,7 +188,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 shadow-lg">
                   <ShieldAlert className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   4. Medical <span className="gradient-text">Disclaimer</span>
                 </h2>
               </div>
@@ -227,7 +227,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg">
                   <Bot className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   5. AI-Powered <span className="gradient-text">Features</span>
                 </h2>
               </div>
@@ -269,7 +269,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 shadow-lg">
                   <Video className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   6. Telemedicine <span className="gradient-text">Services</span>
                 </h2>
               </div>
@@ -309,7 +309,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-500 shadow-lg">
                   <CheckCircle className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   7. Permitted <span className="gradient-text">Use</span>
                 </h2>
               </div>
@@ -381,7 +381,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 shadow-lg">
                   <Copyright className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   8. Intellectual <span className="gradient-text">Property</span>
                 </h2>
               </div>
@@ -420,7 +420,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 shadow-lg">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   9. User <span className="gradient-text">Content</span>
                 </h2>
               </div>
@@ -459,7 +459,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-pink-500 shadow-lg">
                   <Trash2 className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   10. Account <span className="gradient-text">Deletion</span>
                 </h2>
               </div>
@@ -498,7 +498,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
                   <Server className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   11. Service Availability and <span className="gradient-text">Modifications</span>
                 </h2>
               </div>
@@ -538,7 +538,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
                   <AlertTriangle className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   12. Limitation of <span className="gradient-text">Liability</span>
                 </h2>
               </div>
@@ -565,7 +565,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-500 to-slate-700 shadow-lg">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   13. <span className="gradient-text">Indemnification</span>
                 </h2>
               </div>
@@ -591,7 +591,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-500 shadow-lg">
                   <Scale className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   14. Governing Law and <span className="gradient-text">Dispute Resolution</span>
                 </h2>
               </div>
@@ -617,7 +617,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-violet-500 shadow-lg">
                   <Puzzle className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   15. <span className="gradient-text">Severability</span>
                 </h2>
               </div>
@@ -632,7 +632,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 shadow-lg">
                   <FileCheck className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   16. Entire <span className="gradient-text">Agreement</span>
                 </h2>
               </div>
@@ -647,7 +647,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-green-500 shadow-lg">
                   <RefreshCw className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   17. Changes to These <span className="gradient-text">Terms</span>
                 </h2>
               </div>
@@ -672,7 +672,7 @@ export default function TermsOfServicePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 shadow-lg">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   18. Contact <span className="gradient-text">Us</span>
                 </h2>
               </div>

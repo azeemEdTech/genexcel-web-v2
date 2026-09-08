@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { GlassCard } from '@/components/ui/GlassCard';
+import { AppStoreBadges } from '@/components/ui/AppStoreBadges';
+import { Button } from '@/components/ui/Button';
 
 export function CTASection() {
   return (
@@ -15,7 +17,7 @@ export function CTASection() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6 }}
         >
-        <GlassCard className="relative overflow-hidden rounded-[40px] py-20 px-8 sm:px-14" hover={false}>
+        <GlassCard className="relative overflow-hidden rounded-panel py-20 px-8 sm:px-14" hover={false}>
           <div
             aria-hidden="true"
             className="absolute -right-[8%] -top-[40%] w-[520px] h-[520px] rounded-full animate-gx-drift pointer-events-none"
@@ -32,19 +34,22 @@ export function CTASection() {
               Kits ship in 3&ndash;5 days. Results in 2&ndash;3 weeks. A tutor, a diet plan and a coach that keep reading from it.
             </p>
             <div className="flex flex-wrap gap-3.5">
-              <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2.5 h-14 px-7 rounded-full text-[15.5px] font-semibold whitespace-nowrap text-white bg-gradient-to-br from-primary-600 to-secondary-500 shadow-md hover:opacity-90 dark:text-[#F2FEFF] dark:bg-gradient-to-br dark:from-white/[.32] dark:via-[#22D3EE]/[.24] dark:to-[#60A5FA]/20 dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border dark:border-white/[.36] dark:shadow-[0_10px_26px_rgba(4,14,30,.35)] dark:hover:border-white/50 dark:hover:opacity-100 transition-colors"
-              >
-                Order the genetic kit
-                <ArrowRight className="h-[17px] w-[17px]" />
+              <Link href="/pricing">
+                <Button variant="primary" size="lg" rightIcon={<ArrowRight className="h-[17px] w-[17px]" />}>
+                  Order the genetic kit
+                </Button>
               </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center h-14 px-7 rounded-full text-[15.5px] font-semibold whitespace-nowrap text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 dark:text-[#E9F4FF] dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.13] dark:to-white/[.05] dark:backdrop-blur-xl dark:backdrop-saturate-150 dark:border-white/20 dark:hover:border-white/[.38] dark:hover:from-white/20 dark:hover:to-[#22D3EE]/[.14] transition-colors"
-              >
-                Talk to our team
+              <Link href="/contact">
+                <Button variant="secondary" size="lg">
+                  Talk to our team
+                </Button>
               </Link>
+            </div>
+            <div className="mt-9 pt-9 border-t border-slate-200 dark:border-white/10">
+              <p className="text-[12.5px] font-semibold tracking-[0.1em] uppercase text-slate-500 dark:text-[#8B9AB5] mb-3.5">
+                Or take GenExcel with you
+              </p>
+              <AppStoreBadges />
             </div>
           </div>
         </GlassCard>

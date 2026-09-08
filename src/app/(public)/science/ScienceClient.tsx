@@ -141,7 +141,7 @@ export default function SciencePage() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-[26px] py-[34px] px-7 bg-white border border-slate-200 shadow-glass dark:bg-transparent dark:bg-gradient-to-br dark:from-white/10 dark:to-white/[.03] dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border-white/[.15] dark:shadow-none"
+              className="rounded-3xl py-[34px] px-7 bg-white border border-slate-200 shadow-glass dark:bg-transparent dark:bg-gradient-to-br dark:from-white/10 dark:to-white/[.03] dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border-white/[.15] dark:shadow-none"
             >
               <div className={`font-display font-light tracking-[-0.03em] leading-none ${stat.color}`} style={{ fontSize: 'clamp(30px,3.4vw,46px)' }}>
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} duration={1.7} />
@@ -359,7 +359,7 @@ export default function SciencePage() {
                     'Risk-related traits shown only to parents and counsellors, never to a child',
                     'Uncertain cases reviewed by a human before delivery',
                     "Full transparency about what genetics can and can't tell us",
-                  ].map((item, index) => (
+                  ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <div className="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-50 dark:bg-[#22D3EE]/[.09] flex items-center justify-center">
                         <Check className="h-4 w-4 text-cyan-600 dark:text-[#22D3EE]" />
@@ -381,7 +381,7 @@ export default function SciencePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-[40px] py-16 px-8 sm:px-14 max-w-4xl mx-auto text-center bg-white border border-slate-200 shadow-glass-lg dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.14] dark:to-white/[.05] dark:backdrop-blur-3xl dark:backdrop-saturate-150 dark:border-white/20 dark:shadow-none"
+            className="relative overflow-hidden rounded-panel py-16 px-8 sm:px-14 max-w-4xl mx-auto text-center bg-white border border-slate-200 shadow-glass-lg dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.14] dark:to-white/[.05] dark:backdrop-blur-3xl dark:backdrop-saturate-150 dark:border-white/20 dark:shadow-none"
           >
             <div
               aria-hidden="true"

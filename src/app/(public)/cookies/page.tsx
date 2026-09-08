@@ -38,7 +38,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 shadow-lg">
                   <Cookie className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   1. What Are <span className="gradient-text">Cookies?</span>
                 </h2>
               </div>
@@ -59,7 +59,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   2. Cookies on Our <span className="gradient-text">Website</span>
                 </h2>
               </div>
@@ -155,7 +155,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 shadow-lg">
                   <Smartphone className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   3. Cookies and the <span className="gradient-text">Mobile App</span>
                 </h2>
               </div>
@@ -238,7 +238,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
                   <Bell className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   4. Firebase and <span className="gradient-text">Push Notifications</span>
                 </h2>
               </div>
@@ -291,7 +291,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 shadow-lg">
                   <Settings className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   5. How to Manage <span className="gradient-text">Cookies</span>
                 </h2>
               </div>
@@ -356,7 +356,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 shadow-lg">
                   <EyeOff className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   6. Do Not Track <span className="gradient-text">(DNT)</span>
                 </h2>
               </div>
@@ -390,7 +390,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-green-500 shadow-lg">
                   <RefreshCw className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   7. Updates to This <span className="gradient-text">Policy</span>
                 </h2>
               </div>
@@ -405,7 +405,7 @@ export default function CookiePolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 shadow-lg">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   8. Contact <span className="gradient-text">Us</span>
                 </h2>
               </div>

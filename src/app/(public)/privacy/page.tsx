@@ -66,7 +66,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
                   <Eye className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   1. Information We <span className="gradient-text">Collect</span>
                 </h2>
               </div>
@@ -225,7 +225,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 shadow-lg">
                   <Database className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   2. How We Use Your <span className="gradient-text">Information</span>
                 </h2>
               </div>
@@ -285,7 +285,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
                   <Share2 className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   3. Data Sharing and <span className="gradient-text">Disclosure</span>
                 </h2>
               </div>
@@ -370,7 +370,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg">
                   <Lock className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   4. Data <span className="gradient-text">Security</span>
                 </h2>
               </div>
@@ -423,7 +423,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 shadow-lg">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   5. Data <span className="gradient-text">Retention</span>
                 </h2>
               </div>
@@ -472,7 +472,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg">
                   <UserCheck className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   6. Your <span className="gradient-text">Rights</span>
                 </h2>
               </div>
@@ -535,7 +535,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 shadow-lg">
                   <Baby className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   7. Children&apos;s <span className="gradient-text">Privacy</span>
                 </h2>
               </div>
@@ -566,7 +566,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 shadow-lg">
                   <Smartphone className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   8. Device <span className="gradient-text">Permissions</span>
                 </h2>
               </div>
@@ -621,7 +621,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   9. International Data <span className="gradient-text">Transfers</span>
                 </h2>
               </div>
@@ -647,7 +647,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-green-500 shadow-lg">
                   <RefreshCw className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   10. Changes to This <span className="gradient-text">Policy</span>
                 </h2>
               </div>
@@ -676,7 +676,7 @@ export default function PrivacyPolicyPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 shadow-lg">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   11. Contact <span className="gradient-text">Us</span>
                 </h2>
               </div>

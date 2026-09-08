@@ -50,7 +50,7 @@ const contactInfo = [
     title: 'Visit Us',
     description: 'Our headquarters',
     value: 'Bangalore, India',
-    href: '#',
+    href: 'https://www.google.com/maps/search/?api=1&query=Bangalore%2C+India',
   },
 ];
 
@@ -63,6 +63,7 @@ const departments = [
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -77,11 +78,21 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log('Form submitted:', data);
-    setIsSubmitted(true);
-    reset();
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error('Failed to send message');
+
+      setIsSubmitted(true);
+      reset();
+    } catch {
+      setSubmitError("Something went wrong sending your message. Please try again, or email us directly at info@curanova.ai.");
+    }
   };
 
   return (
@@ -101,6 +112,8 @@ export default function ContactPage() {
               <motion.a
                 key={info.title}
                 href={info.href}
+                target={info.href.startsWith('http') ? '_blank' : undefined}
+                rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
@@ -249,6 +262,9 @@ export default function ContactPage() {
 
                 {/* Submit */}
                 <div className="text-center">
+                  {submitError && (
+                    <p className="mb-4 text-sm text-red-500">{submitError}</p>
+                  )}
                   <Button
                     type="submit"
                     size="xl"

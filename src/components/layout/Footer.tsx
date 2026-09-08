@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { footerLinks, siteConfig } from '@/config/site';
+import { AppStoreBadges } from '@/components/ui/AppStoreBadges';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,20 +13,21 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-9 pt-10 pb-11">
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4">
-              <span className="block w-8 h-[34px] overflow-hidden flex-none">
+              <span className="block w-8 h-8 flex-none">
                 <img
                   src="/images/logo-dark.png"
-                  alt="GenExcel AI"
-                  className="h-[42px] block object-cover object-top"
+                  alt="GenExcel"
+                  className="w-full h-full object-contain"
                 />
               </span>
               <span className="font-display text-base font-medium text-slate-900 dark:text-white">
-                genexcel<span className="text-cyan-600 dark:text-[#22D3EE]">.ai</span>
+                GenExcel
               </span>
             </Link>
-            <p className="text-[13.5px] leading-relaxed text-slate-500 dark:text-[#7C8BA5] max-w-[270px]">
+            <p className="text-[13.5px] leading-relaxed text-slate-500 dark:text-[#7C8BA5] max-w-[270px] mb-5">
               A genomics-led learning and wellness platform &mdash; pairing a genetic report with Helix, an AI tutor grounded in your child&rsquo;s own textbooks, plus nutrition and fitness guidance for the whole family.
             </p>
+            <AppStoreBadges />
           </div>
 
           <div>

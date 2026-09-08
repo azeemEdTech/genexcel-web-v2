@@ -9,6 +9,8 @@ export const siteConfig = {
     instagram: 'https://instagram.com/genexcel.ai',
   },
   creator: 'Curanova Global Med LLP',
+  appStoreUrl: 'https://apps.apple.com/in/app/genexcel/id6761897177',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.curanova.genexcel',
 };
 
 export const navItems = [
@@ -74,6 +76,8 @@ export const stats = [
   { value: 8, suffix: '', label: 'Playable Cognitive Games' },
 ];
 
+// Used as the fallback/default content for the admin CMS "Features" section
+// editor (src/app/(admin)/admin/pages) via getPageContent() in src/lib/content.ts.
 export const features = [
   {
     icon: 'Dna',
@@ -125,28 +129,24 @@ export const testimonials = [
     author: 'Priya M.',
     role: 'Parent of 9-year-old',
     location: 'Mumbai',
-    avatar: '/images/testimonials/avatar-1.jpg',
   },
   {
     quote: "As a pediatrician, I recommend GenExcel to families who want to take a proactive approach to their child's health. The insights are clinically relevant, and the risk-related findings are framed carefully for parents rather than the child.",
     author: 'Dr. Rajesh K.',
     role: 'Pediatrician',
     location: 'Bangalore',
-    avatar: '/images/testimonials/avatar-2.jpg',
   },
   {
     quote: "My daughter loves the brain games and is always excited to 'scan' her meals. It's made healthy eating fun and helped her take ownership of her health at just 7 years old.",
     author: 'Anita S.',
     role: 'Parent of 7-year-old',
     location: 'Delhi',
-    avatar: '/images/testimonials/avatar-3.jpg',
   },
   {
     quote: "What sold me was that Helix answers from my son's actual textbook, not generic internet answers — and it never once mentioned his genetic report to him. That line between what I see as a parent and what he sees matters to us.",
     author: 'Karthik R.',
     role: 'Parent of 11-year-old',
     location: 'Chennai',
-    avatar: '/images/testimonials/avatar-4.jpg',
   },
 ];
 
@@ -166,7 +166,7 @@ export const pricingPlans = [
       '1 child profile',
     ],
     cta: 'Get Started Free',
-    href: '/signup',
+    href: '/contact',
     popular: false,
   },
   {
@@ -183,7 +183,7 @@ export const pricingPlans = [
       'Priority email support',
     ],
     cta: 'Order Genetic Test',
-    href: '/order',
+    href: '/contact',
     popular: true,
   },
   {
@@ -200,7 +200,7 @@ export const pricingPlans = [
       'Dedicated family support',
     ],
     cta: 'Get Family Plan',
-    href: '/order?plan=family',
+    href: '/contact',
     popular: false,
   },
 ];

@@ -1,7 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { GlassCard } from '@/components/ui/GlassCard';
+import { Button } from '@/components/ui/Button';
 import { PageHero, GradientText } from '@/components/ui/PageHero';
 import {
   Users,
@@ -86,22 +88,34 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 to-secondary-600 text-white">
-        <div className="container-custom text-center">
-          <h2 className="font-display font-light text-3xl md:text-4xl mb-6">
-            Not Sure Which Solution is Right for You?
-          </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Our team can help you find the perfect fit for your needs. Schedule a free consultation today.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 h-14 px-8 text-lg rounded-full font-semibold bg-white text-primary-700 hover:bg-white/90 shadow-xl transition-all"
+      {/* CTA */}
+      <section className="relative z-[1] py-20 md:py-32">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative overflow-hidden rounded-panel py-16 px-8 sm:px-14 max-w-4xl mx-auto text-center bg-white border border-slate-200 shadow-glass-lg dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.14] dark:to-white/[.05] dark:backdrop-blur-3xl dark:backdrop-saturate-150 dark:border-white/20 dark:shadow-none"
           >
-            Contact Us
-            <ArrowRight className="h-5 w-5" />
-          </Link>
+            <div
+              aria-hidden="true"
+              className="absolute -right-[10%] -top-[30%] w-[420px] h-[420px] rounded-full animate-gx-drift pointer-events-none"
+              style={{ background: 'radial-gradient(circle at 40% 40%, rgba(34,211,238,.18), transparent 68%)' }}
+            />
+            <div className="relative">
+              <h2 className="text-3xl md:text-5xl font-display font-light text-slate-900 dark:text-white mb-6">
+                Not Sure Which Solution is Right for You?
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-[#8B9AB5] max-w-2xl mx-auto mb-8">
+                Our team can help you find the perfect fit for your needs. Schedule a free consultation today.
+              </p>
+              <Link href="/contact">
+                <Button variant="primary" size="xl" rightIcon={<ArrowRight className="h-5 w-5" />}>
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
     </main>

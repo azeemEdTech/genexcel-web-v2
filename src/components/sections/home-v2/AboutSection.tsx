@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, Phone } from 'lucide-react';
 import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
+import { Button } from '@/components/ui/Button';
 
 const ABOUT_STATS = [
   { value: 1020, suffix: '+', label: 'Genetic traits catalogued', color: 'text-slate-900 dark:text-white' },
@@ -37,12 +38,10 @@ export function AboutSection() {
             GenExcel.ai is India&rsquo;s genomics-led learning and wellness platform &mdash; pairing accredited laboratory sequencing with Helix, an AI tutor grounded in your child&rsquo;s own textbooks, plus nutrition and fitness guidance that carries the same genetic adjustments.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <Link
-              href="/platform"
-              className="inline-flex items-center gap-2.5 h-[52px] px-[26px] rounded-full text-[14.5px] font-semibold whitespace-nowrap text-white bg-gradient-to-br from-primary-600 to-secondary-500 shadow-md hover:opacity-90 dark:text-[#F2FEFF] dark:bg-gradient-to-br dark:from-white/[.32] dark:via-[#22D3EE]/[.24] dark:to-[#60A5FA]/20 dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border dark:border-white/[.36] dark:shadow-[0_10px_26px_rgba(4,14,30,.35)] dark:hover:border-white/50 dark:hover:opacity-100 transition-colors"
-            >
-              Learn more
-              <ArrowRight className="h-4 w-4" />
+            <Link href="/platform">
+              <Button variant="primary" size="lg" rightIcon={<ArrowRight className="h-4 w-4" />}>
+                Learn more
+              </Button>
             </Link>
             <div className="flex items-center gap-3">
               <span className="inline-flex items-center justify-center w-[46px] h-[46px] rounded-full border border-slate-200 bg-white text-cyan-600 dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.16] dark:to-white/[.05] dark:backdrop-blur-xl dark:backdrop-saturate-150 dark:border-white/20 dark:text-[#22D3EE]">
@@ -67,7 +66,7 @@ export function AboutSection() {
         {ABOUT_STATS.map((stat) => (
           <div
             key={stat.label}
-            className="rounded-[26px] py-[34px] px-7 bg-white border border-slate-200 shadow-glass dark:bg-transparent dark:bg-gradient-to-br dark:from-white/10 dark:to-white/[.03] dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border-white/[.15] dark:shadow-none"
+            className="rounded-3xl py-[34px] px-7 bg-white border border-slate-200 shadow-glass dark:bg-transparent dark:bg-gradient-to-br dark:from-white/10 dark:to-white/[.03] dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border-white/[.15] dark:shadow-none"
           >
             <div className={`font-display font-light tracking-[-0.03em] leading-none ${stat.color}`} style={{ fontSize: 'clamp(30px,3.4vw,46px)' }}>
               <AnimatedCounter value={stat.value} suffix={stat.suffix} duration={1.7} />

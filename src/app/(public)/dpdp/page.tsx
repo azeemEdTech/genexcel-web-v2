@@ -38,7 +38,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
                   <Building className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   1. Data Fiduciary <span className="gradient-text">Information</span>
                 </h2>
               </div>
@@ -79,7 +79,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg">
                   <FileCheck className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   2. Lawful Purpose of <span className="gradient-text">Data Processing</span>
                 </h2>
               </div>
@@ -147,7 +147,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 shadow-lg">
                   <KeyRound className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   3. Consent <span className="gradient-text">Mechanism</span>
                 </h2>
               </div>
@@ -213,7 +213,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg">
                   <UserCheck className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   4. Rights of Data <span className="gradient-text">Principals</span>
                 </h2>
               </div>
@@ -297,7 +297,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 shadow-lg">
                   <Baby className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   5. Data Processing for <span className="gradient-text">Children</span>
                 </h2>
               </div>
@@ -353,7 +353,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   6. Data Processors and <span className="gradient-text">Cross-Border Transfers</span>
                 </h2>
               </div>
@@ -420,7 +420,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg">
                   <Lock className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   7. Data Security <span className="gradient-text">Measures</span>
                 </h2>
               </div>
@@ -468,7 +468,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 shadow-lg">
                   <AlertTriangle className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   8. Data Breach <span className="gradient-text">Notification</span>
                 </h2>
               </div>
@@ -500,7 +500,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 shadow-lg">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   9. Retention and <span className="gradient-text">Deletion</span>
                 </h2>
               </div>
@@ -550,7 +550,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-500 shadow-lg">
                   <Landmark className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   10. Significant Data Fiduciary <span className="gradient-text">Obligations</span>
                 </h2>
               </div>
@@ -576,7 +576,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-green-500 shadow-lg">
                   <RefreshCw className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   11. Updates to This <span className="gradient-text">Notice</span>
                 </h2>
               </div>
@@ -600,7 +600,7 @@ export default function DPDPCompliancePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 shadow-lg">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white">
                   12. Contact and <span className="gradient-text">Grievance Redressal</span>
                 </h2>
               </div>

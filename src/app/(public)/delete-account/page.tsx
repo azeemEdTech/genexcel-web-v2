@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Button } from '@/components/ui/Button';
 import { GlassCard } from '@/components/ui/GlassCard';
-import { PageHero, GradientText } from '@/components/ui/PageHero';
+import { PageHero } from '@/components/ui/PageHero';
 import {
   AlertTriangle,
   Trash2,

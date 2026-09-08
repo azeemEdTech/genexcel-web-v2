@@ -13,7 +13,6 @@ import {
   Eye,
   Edit,
   Trash2,
-  MoreVertical,
 } from 'lucide-react';
 
 interface Post {
@@ -27,22 +26,10 @@ interface Post {
   category: { name: string; slug: string } | null;
 }
 
-interface Category {
-  id: string;
-  name: string;
-}
-
-export function BlogListContent({
-  posts,
-  categories,
-}: {
-  posts: Post[];
-  categories: Category[];
-}) {
+export function BlogListContent({ posts }: { posts: Post[] }) {
   const router = useRouter();
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('ALL');
-  const [deleteId, setDeleteId] = useState<string | null>(null);
 
   const filtered = posts.filter((post) => {
     const matchesSearch = post.title

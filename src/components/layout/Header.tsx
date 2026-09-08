@@ -12,15 +12,15 @@ import { cn } from '@/lib/utils';
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5 group">
-      <span className="block w-[34px] h-9 overflow-hidden flex-none">
+      <span className="block w-9 h-9 flex-none">
         <img
           src="/images/logo-dark.png"
-          alt="GenExcel AI"
-          className="h-[45px] block object-cover object-top"
+          alt="GenExcel"
+          className="w-full h-full object-contain"
         />
       </span>
       <span className="font-display text-lg font-medium tracking-[0.01em] text-slate-900 dark:text-white">
-        genexcel<span className="text-cyan-600 dark:text-[#22D3EE]">.ai</span>
+        GenExcel
       </span>
     </Link>
   );

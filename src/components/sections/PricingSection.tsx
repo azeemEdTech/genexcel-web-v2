@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import Link from 'next/link';
 import { Check, ArrowRight, Zap, Sparkles } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
 import { pricingPlans } from '@/config/site';
 import { cn } from '@/lib/utils';
 
@@ -59,17 +60,15 @@ function PricingCard({
           ))}
         </div>
 
-        <Link
-          href={plan.href}
-          className={cn(
-            'inline-flex items-center justify-center gap-2 h-[50px] rounded-full text-[14.5px] font-semibold whitespace-nowrap transition-colors',
-            plan.popular
-              ? 'text-white bg-gradient-to-br from-primary-600 to-secondary-500 shadow-md hover:opacity-90 dark:text-[#F2FEFF] dark:bg-gradient-to-br dark:from-white/[.32] dark:via-[#22D3EE]/[.24] dark:to-[#60A5FA]/20 dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border dark:border-white/[.36] dark:shadow-[0_10px_26px_rgba(4,14,30,.35)] dark:hover:border-white/50 dark:hover:opacity-100'
-              : 'text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 dark:text-[#E9F4FF] dark:bg-transparent dark:bg-gradient-to-br dark:from-white/[.13] dark:to-white/[.05] dark:backdrop-blur-xl dark:backdrop-saturate-150 dark:border-white/20 dark:hover:border-white/40'
-          )}
-        >
-          {plan.cta}
-          <ArrowRight className="h-4 w-4" />
+        <Link href={plan.href} className="flex">
+          <Button
+            variant={plan.popular ? 'primary' : 'secondary'}
+            size="lg"
+            rightIcon={<ArrowRight className="h-4 w-4" />}
+            className="w-full"
+          >
+            {plan.cta}
+          </Button>
         </Link>
       </div>
     </motion.div>
@@ -135,7 +134,10 @@ export function PricingSection({ mode = 'standalone' }: PricingSectionProps) {
               <Sparkles className="h-3 w-3 mr-1" />
               Simple Pricing
             </Badge>
-            <h2 className="font-display text-4xl md:text-5xl font-light tracking-[-0.03em] text-slate-900 dark:text-white mb-6">
+            <h2
+              className="font-display font-light tracking-[-0.03em] text-slate-900 dark:text-white mb-6"
+              style={{ fontSize: 'clamp(30px,4.2vw,56px)' }}
+            >
               Choose Your{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-blue-500 dark:from-[#22D3EE] dark:to-[#60A5FA]">Plan</span>
             </h2>

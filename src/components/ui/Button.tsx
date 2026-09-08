@@ -16,7 +16,7 @@ const buttonVariants = cva(
           'hover:opacity-90',
           'dark:text-[#F2FEFF] dark:bg-gradient-to-br dark:from-white/[.32] dark:via-[#22D3EE]/[.24] dark:to-[#60A5FA]/20',
           'dark:backdrop-blur-2xl dark:backdrop-saturate-150 dark:border dark:border-white/[.36]',
-          'dark:shadow-[0_10px_26px_rgba(4,14,30,.35)] dark:hover:border-white/50 dark:hover:opacity-100',
+          'dark:shadow-cta dark:hover:border-white/50 dark:hover:opacity-100',
           'focus-visible:ring-primary-500',
           'active:scale-[0.98]',
         ],

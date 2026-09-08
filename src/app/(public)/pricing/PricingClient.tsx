@@ -117,7 +117,7 @@ export default function PricingPage() {
               <HelpCircle className="h-3 w-3 mr-1" />
               FAQs
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            <h2 className="font-display font-light text-3xl md:text-4xl text-slate-900 dark:text-white mb-4">
               Frequently Asked <span className="gradient-text">Questions</span>
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">

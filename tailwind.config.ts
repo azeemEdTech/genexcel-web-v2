@@ -98,6 +98,10 @@ const config: Config = {
         'inner-glow': 'inset 0 0 20px rgba(37, 99, 235, 0.1)',
         'glass': '0 8px 32px rgba(0, 0, 0, 0.08)',
         'glass-lg': '0 16px 48px rgba(0, 0, 0, 0.12)',
+        'cta': '0 10px 26px rgba(4, 14, 30, .35)',
+      },
+      borderRadius: {
+        'panel': '40px',
       },
       backdropBlur: {
         xs: '2px',
